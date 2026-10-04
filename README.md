@@ -39,13 +39,10 @@ One extension, two themes. You can use them together or on their own.
 
 ## Install
 
-The extension is not on the Marketplace yet, so you build the VSIX yourself. You need Node.js and VS Code 1.85 or newer.
+Open the Extensions view in VS Code, search for **MX Y2K Techno Noir** and click **Install**. Or from a terminal:
 
 ```sh
-git clone https://github.com/maxontorres/vscode-y2k-techno-noir-theme.git
-cd vscode-y2k-techno-noir-theme
-npm run package
-code --install-extension mx-y2k-techno-noir-1.1.0.vsix
+code --install-extension maxontorres.mx-y2k-techno-noir
 ```
 
 Then, from the Command Palette:
@@ -53,7 +50,16 @@ Then, from the Command Palette:
 1. Run **Preferences: Color Theme** and pick **MX Y2K Techno Noir**.
 2. Run **Preferences: File Icon Theme** and pick **MX Y2K Terminal Icons**.
 
-If the `code` command is not on your PATH, run **Extensions: Install from VSIX...** in VS Code and pick the generated file.
+### Build from source
+
+You need Node.js and VS Code 1.85 or newer.
+
+```sh
+git clone https://github.com/maxontorres/vscode-y2k-techno-noir-theme.git
+cd vscode-y2k-techno-noir-theme
+npm run package
+code --install-extension mx-y2k-techno-noir-1.1.0.vsix
+```
 
 ## Color theme
 
@@ -93,6 +99,7 @@ Open this folder in VS Code and press `F5` to launch an Extension Development Ho
 | `npm run build:icons` | Regenerates the SVG assets, the icon theme JSON and the review sheet |
 | `npm run validate` | Checks both themes: color keys, SVG constraints, icon mappings |
 | `npm run package` | Builds the VSIX |
+| `npm run release` | Validates, then publishes to the Marketplace |
 
 | Path | Contents |
 |---|---|

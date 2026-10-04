@@ -3,18 +3,23 @@
   "displayName": "MX Y2K Techno Noir",
   "description": "A dense Y2K techno-noir color theme and matching terminal-style file icons, inspired by early-2000s cyber-ops interfaces and hacker workstations.",
   "version": "1.1.0",
+  "private": true,
   "publisher": "maxontorres",
-  "engines": { "vscode": "^1.85.0" },
+  "author": { "name": "Maxon Torres" },
   "license": "MIT",
+  "icon": "images/icon.png",
+  "galleryBanner": { "color": "#07090D", "theme": "dark" },
+  "engines": { "vscode": "^1.85.0" },
   "repository": { "type": "git", "url": "https://github.com/maxontorres/vscode-y2k-techno-noir-theme.git" },
   "homepage": "https://github.com/maxontorres/vscode-y2k-techno-noir-theme#readme",
   "bugs": { "url": "https://github.com/maxontorres/vscode-y2k-techno-noir-theme/issues" },
   "categories": ["Themes"],
-  "keywords": ["y2k", "dark", "noir", "retro", "icon theme"],
+  "keywords": ["y2k", "dark", "dark theme", "noir", "retro", "cyberpunk", "hacker", "terminal", "color theme", "icon theme", "file icons", "folder icons"],
   "scripts": {
     "build:icons": "node scripts/build-icons.mjs",
     "validate": "node scripts/validate.mjs",
-    "package": "npx @vscode/vsce package"
+    "package": "npx @vscode/vsce package",
+    "release": "npm run validate && npx @vscode/vsce publish"
   },
   "contributes": {
     "themes": [{
