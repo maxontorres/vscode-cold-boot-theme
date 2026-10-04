@@ -306,7 +306,7 @@ const theme = {
   folderNames: invert(folderNames, (icon) => `folder-${icon}`),
   folderNamesExpanded: invert(folderNames, (icon) => `folder-${icon}-open`),
 };
-fs.writeFileSync('icons/mx-y2k-icon-theme.json', JSON.stringify(theme, null, 2) + '\n');
+fs.writeFileSync('icons/cold-boot-icon-theme.json', JSON.stringify(theme, null, 2) + '\n');
 
 // -------------------------------------------------------------- review sheet
 const WIDTH = 960, COLUMNS = 8, CELL_W = 116, CELL_H = 84, LEFT = 24;

@@ -2,7 +2,7 @@
   <img src="mx-logo-1.png" alt="MX - Maxon Torres, Software Consultant" width="480">
 </p>
 
-<h1 align="center">MX Y2K Techno Noir</h1>
+<h1 align="center">Cold Boot</h1>
 
 <p align="center">
   A dark VS Code color theme and a matching file icon theme with a<br>
@@ -25,7 +25,7 @@
 </p>
 
 <p align="center">
-  <img src="concepts/uplink-icons-review.png" alt="MX Y2K Terminal Icons enlarged to 48px and at native 16px" width="744">
+  <img src="concepts/uplink-icons-review.png" alt="Cold Boot Icons enlarged to 48px and at native 16px" width="744">
 </p>
 
 ## What's inside
@@ -34,31 +34,31 @@ One extension, two themes. You can use them together or on their own.
 
 | Theme | What it is | Where to enable it |
 |---|---|---|
-| **MX Y2K Techno Noir** | Dark color theme for the editor and the whole workbench | **Preferences: Color Theme** |
-| **MX Y2K Terminal Icons** | 48 file icons and 92 folder icons | **Preferences: File Icon Theme** |
+| **Cold Boot** | Dark color theme for the editor and the whole workbench | **Preferences: Color Theme** |
+| **Cold Boot Icons** | 48 file icons and 92 folder icons | **Preferences: File Icon Theme** |
 
 ## Install
 
-Open the Extensions view in VS Code, search for **MX Y2K Techno Noir** and click **Install**. Or from a terminal:
+Open the Extensions view in VS Code, search for **Cold Boot** and click **Install**. Or from a terminal:
 
 ```sh
-code --install-extension maxontorres.mx-y2k-techno-noir
+code --install-extension maxontorres.cold-boot
 ```
 
 Then, from the Command Palette:
 
-1. Run **Preferences: Color Theme** and pick **MX Y2K Techno Noir**.
-2. Run **Preferences: File Icon Theme** and pick **MX Y2K Terminal Icons**.
+1. Run **Preferences: Color Theme** and pick **Cold Boot**.
+2. Run **Preferences: File Icon Theme** and pick **Cold Boot Icons**.
 
 ### Build from source
 
 You need Node.js and VS Code 1.85 or newer.
 
 ```sh
-git clone https://github.com/maxontorres/vscode-y2k-techno-noir-theme.git
-cd vscode-y2k-techno-noir-theme
+git clone https://github.com/maxontorres/vscode-cold-boot-theme.git
+cd vscode-cold-boot-theme
 npm run package
-code --install-extension mx-y2k-techno-noir-1.1.0.vsix
+code --install-extension cold-boot-1.1.0.vsix
 ```
 
 ## Color theme
@@ -108,7 +108,7 @@ Open this folder in VS Code and press `F5` to launch an Extension Development Ho
 | `scripts/` | Icon generator and validator |
 | `concepts/` | Review sheets, excluded from the VSIX |
 
-Icons and their mappings are defined in `scripts/build-icons.mjs`. Edit that file, not the generated SVGs or `icons/mx-y2k-icon-theme.json`. To check your changes, open `concepts/uplink-icons-review.svg` at 100% and compare the enlarged geometry with the native 16px row.
+Icons and their mappings are defined in `scripts/build-icons.mjs`. Edit that file, not the generated SVGs or `icons/cold-boot-icon-theme.json`. To check your changes, open `concepts/uplink-icons-review.svg` at 100% and compare the enlarged geometry with the native 16px row.
 
 ## License
 
