@@ -12,7 +12,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/VS%20Code-%5E1.85-4CC9F0?style=flat-square&labelColor=07090D" alt="VS Code ^1.85">
   <img src="https://img.shields.io/badge/color%20theme-dark-FF4FD8?style=flat-square&labelColor=07090D" alt="Dark color theme">
-  <img src="https://img.shields.io/badge/file%20icons-10-FFD166?style=flat-square&labelColor=07090D" alt="10 file icons">
+  <img src="https://img.shields.io/badge/file%20icons-140-FFD166?style=flat-square&labelColor=07090D" alt="140 icons">
 </p>
 
 <p align="center">
@@ -29,7 +29,7 @@
 | Component | Where to enable it | Source |
 |---|---|---|
 | **MX Y2K Techno Noir** — dark color theme | **Preferences: Color Theme** | `themes/` |
-| **MX Y2K Terminal Icons** — first production icon prototype | **Preferences: File Icon Theme** | `icons/` |
+| **MX Y2K Terminal Icons** — type-based file icons and purpose-based folder icons | **Preferences: File Icon Theme** | `icons/` |
 
 ## Color theme
 
@@ -52,12 +52,12 @@
 ## Icons
 
 <p align="center">
-  <img src="concepts/terminal-icons-review.png" alt="MX Y2K Terminal Icons at 16px in color and monochrome, and enlarged to 64px" width="744">
+  <img src="concepts/uplink-icons-review.png" alt="MX Y2K Terminal Icons enlarged to 48px and at native 16px" width="744">
 </p>
 
-MX Icon Language v0.1 — Terminal takes inspiration from early-2000s hacker and network workstation interfaces. Sharp outlines, compact path glyphs, and restrained colors keep the icons technical and readable at 16px. Identity uses geometry and glyphs as well as color.
+MX Icon Language v0.1 — Uplink Terminal takes inspiration from early-2000s hacker and network workstation interfaces. Sharp outlines, compact path glyphs, and restrained colors keep the icons technical and readable at 16px. Identity uses geometry and glyphs as well as color.
 
-The prototype includes closed/open folders, generic files, PHP, TypeScript, JSON, HTML/HTM, CSS/SCSS/Sass, environment files, and Git configuration files. Package, Composer, and TypeScript configuration JSON use the JSON icon.
+The theme has 48 file icons and 92 folder icons. File icons follow the file type: an extension picks the language or data format, and a file name only overrides it when the file itself is a tool manifest or config (`package.json`, `composer.json`, `Cargo.toml`, `Dockerfile`, `nginx.conf`) or a framework's own entry point (`manage.py`, `artisan`, `angular.json`). `UserController.php` is PHP and `auth.service.ts` is TypeScript. Folder icons follow the role of the directory (`src`, `config`, `migrations`, `tests`) and share one folder outline with a small glyph inside.
 
 ## Install
 
@@ -72,8 +72,8 @@ Open this folder in VS Code and press `F5` to launch an Extension Development Ho
 
 | Command | What it does |
 |---|---|
-| `npm run build:icons` | Regenerates the SVG assets and the review sheet |
+| `npm run build:icons` | Regenerates the SVG assets, the icon theme JSON and the review sheet |
 | `npm run validate` | Checks both themes |
 | `npm run package` | Builds the VSIX |
 
-Open `concepts/terminal-icons-review.svg` at 100% to compare native 16px, monochrome, and enlarged geometry. The review sheet is excluded from the extension package.
+Icons and mappings are defined in `scripts/build-icons.mjs`; edit that file rather than the generated SVGs or `icons/mx-y2k-icon-theme.json`. Open `concepts/uplink-icons-review.svg` at 100% to compare enlarged geometry with native 16px. The review sheet is excluded from the extension package.
