@@ -1,0 +1,43 @@
+{
+  "iconDefinitions": {
+    "file": { "iconPath": "./files/file.svg" },
+    "folder": { "iconPath": "./folders/folder.svg" },
+    "folder-open": { "iconPath": "./folders/folder-open.svg" },
+    "php": { "iconPath": "./files/php.svg" },
+    "typescript": { "iconPath": "./files/typescript.svg" },
+    "json": { "iconPath": "./files/json.svg" },
+    "html": { "iconPath": "./files/html.svg" },
+    "css": { "iconPath": "./files/css.svg" },
+    "env": { "iconPath": "./files/env.svg" },
+    "git": { "iconPath": "./files/git.svg" }
+  },
+  "showLanguageModeIcons": false,
+  "file": "file",
+  "folder": "folder",
+  "folderExpanded": "folder-open",
+  "rootFolder": "folder",
+  "rootFolderExpanded": "folder-open",
+  "fileExtensions": {
+    "php": "php",
+    "ts": "typescript",
+    "json": "json",
+    "html": "html",
+    "htm": "html",
+    "css": "css",
+    "scss": "css",
+    "sass": "css"
+  },
+  "fileNames": {
+    ".env": "env",
+    ".env.local": "env",
+    ".env.example": "env",
+    ".env.production": "env",
+    ".env.development": "env",
+    ".gitignore": "git",
+    ".gitattributes": "git",
+    ".gitmodules": "git",
+    "package.json": "json",
+    "composer.json": "json",
+    "tsconfig.json": "json"
+  }
+}
