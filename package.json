@@ -5,7 +5,10 @@
   "version": "1.1.0",
   "publisher": "maxontorres",
   "engines": { "vscode": "^1.85.0" },
-  "repository": { "type": "git", "url": "https://github.com/maxontorres/mx-y2k-techno-noir.git" },
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/maxontorres/vscode-y2k-techno-noir-theme.git" },
+  "homepage": "https://github.com/maxontorres/vscode-y2k-techno-noir-theme#readme",
+  "bugs": { "url": "https://github.com/maxontorres/vscode-y2k-techno-noir-theme/issues" },
   "categories": ["Themes"],
   "keywords": ["y2k", "dark", "noir", "retro", "icon theme"],
   "scripts": {
