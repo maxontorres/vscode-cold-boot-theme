@@ -25,6 +25,10 @@
 </p>
 
 <p align="center">
+  <img src="images/screenshot.png" alt="Cold Boot color theme and Cold Boot Icons in VS Code, with a TypeScript file open" width="744">
+</p>
+
+<p align="center">
   <img src="concepts/uplink-icons-review.png" alt="Cold Boot Icons enlarged to 48px and at native 16px" width="744">
 </p>
 

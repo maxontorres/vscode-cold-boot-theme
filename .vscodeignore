@@ -4,3 +4,4 @@ scripts/**
 *.vsix
 .gitignore
 mx-logo-1.png
+images/screenshot.png
